@@ -1,4 +1,4 @@
-# 波浪線動畫 (Graphic Line Wave)
+# 波浪線動畫 1104A033
 
 Version 1.2.0
 
