@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪圖教學</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #waveCanvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('全畫面波浪動畫已載入！');
+
+            // 建立 canvas 元素並插入 body
+            let canvas = document.getElementById('waveCanvas');
+            if (!canvas) {
+                canvas = document.createElement('canvas');
+                canvas.id = 'waveCanvas';
+                document.body.appendChild(canvas);
+            }
+
+            const ctx = canvas.getContext('2d');
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
